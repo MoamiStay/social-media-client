@@ -1,5 +1,6 @@
 {
   "name": "css-frameworks-ca",
+  "private": true,
   "version": "1.0.0",
   "description": "Workflow CA",
   "type": "module",
@@ -7,7 +8,13 @@
   "scripts": {
     "test": "",
     "lint-fix": "eslint src/**/*.js --cache --fix",
+<<<<<<< Updated upstream
     "build": "vite",
+=======
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+>>>>>>> Stashed changes
     "start": "sass --watch src/scss:dist/css & live-server",
     "prepare": "husky install"
   },
