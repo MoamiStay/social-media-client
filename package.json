@@ -10,6 +10,7 @@
     "test-unit": "jest",
     "lint-fix": "eslint src/**/*.js --cache --fix",
     "dev": "vite",
+    "build": "sass src/scss:dist/css",
     "bundle": "vite build",
     "preview": "vite preview",
     "start": "sass --watch src/scss:dist/css & live-server",
