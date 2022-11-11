@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 
 on:
   # Runs on merging targeting the default branch
-  merge:
+  push:
     branches: ["regine_main"]
 
   # Allows you to run this workflow manually from the Actions tab
