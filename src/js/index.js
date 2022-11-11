@@ -2,6 +2,6 @@ import router from './router/index.js';
 import ui from './ui/index.js';
 
 ui();
-router();;;
+router();
 
-    // "build": "sass src/scss:dist/css",
+// "build": "sass src/scss:dist/css",
