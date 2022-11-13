@@ -2,11 +2,11 @@ The following workflows/hooks are required:
 X Project is configured to run Prettier on commit
 X Project is configured to run ESLint on commit
 X Project is configured to run Jest on commit
-* Project is configured to deploy to pages on merge to default
+X Project is configured to deploy to pages on merge to default
 
 The following file changes are required:
 * Project readme file is updated to include new configuration information and status badges
-* Project is configured for hosting (e.g. CDN links or a Bundler)
+X Project is configured for hosting (e.g. CDN links or a Bundler)
 
 The following features must be automatically tested with unit tests:
 * The login function returns a valid token when provided with valid credentials
