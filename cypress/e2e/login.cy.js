@@ -3,6 +3,9 @@ describe("test login", () => {
     cy.visit("/");
     cy.login("testuser@noroff.no", "12345qwe");
 
-    expect(cy.getLocalStorage("token").length).to.not.be.null;
+    cy.getLocalStorage("token").then((token) => {
+      expect(token.length).to.not.be.null;
+    // expect(cy.getLocalStorage("token").length).to.not.be.null;
     })
+})
 })
