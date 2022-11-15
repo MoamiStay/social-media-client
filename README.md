@@ -1,3 +1,5 @@
+[![Deploy static content to Pages](https://github.com/MoamiStay/social-media-client/actions/workflows/pages.yml/badge.svg?branch=regine_main)](https://github.com/MoamiStay/social-media-client/actions/workflows/pages.yml)
+
 The following workflows/hooks are required:
 X Project is configured to run Prettier on commit
 X Project is configured to run ESLint on commit
