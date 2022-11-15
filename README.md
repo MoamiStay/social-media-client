@@ -3,12 +3,12 @@
 *************
 
 O Eslint, Prettier, Jest test runs on Commit</br>
-O Build with Vite and deploy to github pages on push. (Workflow must be done manually on Github.)
-O Cypress tests for login, logout and create post.
+O Build with Vite and deploy to github pages on push. (Workflow must be done manually on Github.)</br>
+O Cypress tests for login, logout and create post.</br>
 
 *************
 
-jest test:
+jest test:</br>
 I tried to check for a valid login with jest by checking for a empty object. The code looked something like this:
 expect(object) === null).toBeTruthy;
 However, because there was missing commits from that point, multiple test files were lost because of merge-conflicts and confusion regarding branches and moving between them when there were forementioned issues. 
@@ -20,11 +20,11 @@ cypress won't update live. I need to close cypress entirely every time I need to
 
 ****
 
-Setup:
-Install packages: npm install
-Build site: npm run bundle
-Preview: npm run preview
+Setup:</br>
+Install packages: npm install</br>
+Build site: npm run bundle</br>
+Preview: npm run preview</br>
 
-Testing:
-Run Jest: npm run test-unit
-Run Cypress: npm run cypress:open
+Testing:</br>
+Run Jest: npm run test-unit</br>
+Run Cypress: npm run cypress:open</br>
