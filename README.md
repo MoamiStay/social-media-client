@@ -18,7 +18,7 @@ Currently the CSS will not be implemented into the final build. I think the issu
 
 cypress won't update live. I need to close cypress entirely every time I need to run the test again. Since I didn't have time to find a solution I didn't finish all the tests because this issue almost defeats the whole purpose of using Cypress to begin with. 
 
-***
+****
 
 Setup:
 Install packages: npm install
