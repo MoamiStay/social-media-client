@@ -2,7 +2,7 @@
 
 *************
 
-O Eslint, Prettier, Jest test runs on Commit
+O Eslint, Prettier, Jest test runs on Commit</br>
 O Build with Vite and deploy to github pages on push. (Workflow must be done manually on Github.)
 O Cypress tests for login, logout and create post.
 
