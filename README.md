@@ -1,32 +1,30 @@
 [![Deploy static content to Pages](https://github.com/MoamiStay/social-media-client/actions/workflows/pages.yml/badge.svg?branch=regine_main)](https://github.com/MoamiStay/social-media-client/actions/workflows/pages.yml)
 
-The following workflows/hooks are required:
-X Project is configured to run Prettier on commit
-X Project is configured to run ESLint on commit
-X Project is configured to run Jest on commit
-X Project is configured to deploy to pages on merge to default
+*************
 
-The following file changes are required:
-* Project readme file is updated to include new configuration information and status badges
-X Project is configured for hosting (e.g. CDN links or a Bundler)
+O Eslint, Prettier, Jest test runs on Commit
+O Build with Vite and deploy to github pages on push. (Workflow must be done manually on Github.)
+O Cypress tests for login, logout and create post.
 
-The following features must be automatically tested with unit tests:
-X The login function returns a valid token when provided with valid credentials
-* The logout function clears the token from browser storage
-* The create item function creates a new item on the API
-
-The following features must be automatically tested with end-to-end tests:
-* The login form validates user inputs correctly based on API restrictions
-* The create item form validates user inputs correctly based on API restrictions
-X The logout button logs the user out when clicked
-
-
+*************
 
 jest test:
-error: localstorage is not defined. 
-Because the website is not actually running. But since the test checked for both valid and invalid login. 
-Made a separate test file called "something" in /src, simply to run a successful jest test. However, it is unrelated to any functionality of the app. 
+I tried to check for a valid login with jest by checking for a empty object. The code looked something like this:
+expect(object) === null).toBeTruthy;
+However, because there was missing commits from that point, multiple test files were lost because of merge-conflicts and confusion regarding branches and moving between them when there were forementioned issues. 
+At this point there is only a simple jest-test that is unrelated to any of the functionality of website. It's is simply a test to demonstrate knowledge of usage of jest testing.
 
-Får ikke til at css blir lagt til.
+Currently the CSS will not be implemented into the final build. I think the issue lies with Vite, but I did not manage to figure out exactly what the problem was or how to fix it. The CSS was working just fine before installing Vite. 
 
-cypress won't update live. I need to close cypress entirely every time I need to run the test again. Since I didn't have time to find a solution I couldn't finish all the tests. 
+cypress won't update live. I need to close cypress entirely every time I need to run the test again. Since I didn't have time to find a solution I didn't finish all the tests because this issue almost defeats the whole purpose of using Cypress to begin with. 
+
+***
+
+Setup:
+Install packages: npm install
+Build site: npm run bundle
+Preview: npm run preview
+
+Testing:
+Run Jest: npm run test-unit
+Run Cypress: npm run cypress:open
